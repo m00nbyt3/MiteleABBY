@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+	"name": "Mitele AdBlock Bypass",
+	"icons":
+	{
+	"16": "miteleABBY.png",
+	"48": "miteleABBY.png",
+	"128": "miteleABBY.png"
+	},
+	"version": "1.0",
+	"description": "Removes Mitele site AdBlock blocker.",
+	"content_scripts": [{
+		"matches": ["https://www.mitele.es/*"],
+		"run_at": "document_end",
+		"js": ["mtadby.js"],
+	    "css": ["pwned.css"]
+  	}]
+}
